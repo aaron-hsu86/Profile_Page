@@ -12,16 +12,21 @@ body {
     width: 100%;
     height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: fixed;
+}
+.nav-bar{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .nav ul {
     display: flex;
     width: 300px;
     justify-content: space-between;
     list-style-type: none;
-    margin-right: 300px;
+    margin-left: 25px;
+    margin-right: 200px;
 }
 .sign_out {
     color: white;
@@ -38,7 +43,6 @@ body {
     display: flex;
     padding: 20px;
     justify-content: center;
-    background-color:gainsboro;
 }
 
 /* feed */
@@ -55,9 +59,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: -5px 5px grey;
 }
 
 .user-card {
@@ -66,6 +67,9 @@ body {
     background-color: #fff;
     font-size: 20px;
     overflow: hidden;
+    border-style:solid;
+    border-color: lightgray;
+    border-width: 5px;
 }
 
 .card-header {
@@ -82,7 +86,7 @@ body {
 .card-body h2,
 .card-body h3,
 .card-body p {
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .avatar-m {
@@ -95,7 +99,7 @@ body {
 }
 
 .icon-s {
-    height: 10px;
+    height: 20px;
 }
 
 a {
@@ -105,9 +109,9 @@ a {
 /* Education container */
 .education-container {
     background-color:white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: -5px 5px grey;
+    border-style:solid;
+    border-color: lightgray;
+    border-width: 5px;
 }
 .education-banner {
     background-color: black;
@@ -131,9 +135,6 @@ a {
     margin-left: 20px;
 }
 .connection-requests-container, .connections-container{
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: -5px 5px grey;
     margin-bottom: 20px;
 }
 .connection-requests-banner, .your-connections-banner {
@@ -154,8 +155,12 @@ a {
 .connection-requests-contacts, .connections-people, .connections-more {
     padding: 10px;
     background-color: white;
+    border-style:solid;
+    border-color: lightgray;
+    border-width: 5px;
 }
 .names {
+    width: 65px;
     margin: 0px 10px;
 }
 .user-1, .user-2 {
@@ -165,20 +170,14 @@ a {
     margin-bottom: 10px;
 }
 .accept, .reject {
-    height: 30px;
+    height: 25px;
     display: flex;
-    outline-style: solid;
-    border-radius: 50%;
-    overflow: hidden;
+}
+.buttons{
+    width: 60px;
 }
 .buttons > button {
     border: none;
-}
-.accept {
-    background-color:lime;
-}
-.reject {
-    background-color: red;
 }
 .connection-numbers {
     background-color: lightgrey;
@@ -195,8 +194,8 @@ a {
     display: flex;
     align-items: center;
 }
-.profile_pic {
-    height: 75px;
+.profile-pic {
+    height: 25px;
     border-radius: 50%;
     outline-style: solid;
     outline-width: 2px;
