@@ -1,0 +1,243 @@
+code + CSS from first attempt
+
+<!-- Bottom section -->
+    <div class="page-details"> <!-- Redundant? -->
+        <!-- Contains page details -->
+        <div class="bottom-container">
+            <!-- Feed section -->
+            <div class="left-content">
+
+                <!-- User Card -->
+                <div class="user-card-container">
+                    <!-- user info card -->
+                    <div class="user-card">
+                        <div class="card-header">
+                            <img src="./icons/user-circle.png" alt="user-circle" class="avatar-m">
+                        </div>
+                        <div class="card-body">
+                            <h1>Aaron Hsu</h1>
+                            <h3>
+                                <img src="./icons/map-marker.png" alt="pin" class="icon-s">
+                                California
+                            </h3>
+                            <p>Developer | Engineer | Problem Solver<br>
+                                Master of shadows and the Internet!</p>
+                            <p>
+                                <a href="#">
+                                    <img src="./icons/gear.png" alt="gear" class="icon-s">
+                                    edit profile
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education section -->
+                <div class="education-container">
+                    <div class="education-banner">
+                        <p>Education</p>
+                    </div>
+                    <div class="education-details">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Notification section. Fix to side of screen? -->
+            <div class="right-content">
+                <!-- Connection Request container -->
+                <div class="connection-requests-container">
+                    <!-- Connection Request banner -->
+                    <div class="connection-requests-banner">
+                        <!-- circle icon for number? Connection Requests -->
+                        <div class="connection-number">
+                            <!-- 2 - Button?--> <!-- check again-->
+                            <p>2</p>
+                        </div>
+                        <p>Connection Requests</p>
+                    </div>
+                    <!-- Connection Request details -->
+                    <div class="connection-requests-contacts">
+                        <!-- container for each request -->
+                        <div class="request-1">
+                            <div class="user-1">
+                                <!-- image for user 1, name -->
+                                <img src="./images/todd-s.jpg" alt="Todd">
+                                <p>Todd E</p>
+                            </div>
+                            <div class="accept-reject">
+                                <!-- 2 buttons to accept/reject -->
+                                <button><img src="./icons/accept-circle.png" alt="accept"></button>
+                                <button><img src="./icons/close-circle.png" alt="reject"></button>
+                            </div>
+                        </div>
+
+                        <div class="request-2">
+                            <div class="user-2">
+                                <!-- image for user 2, name -->
+                                <img src="./images/phil-s.jpg" alt="Phil">
+                                <p>Phil K</p>
+                            </div>
+                            <div class="accept-reject">
+                                <!-- 2 buttons to accept/reject -->
+                                <button><img src="./icons/accept-circle.png" alt="accept"></button>
+                                <button><img src="./icons/close-circle.png" alt="reject"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Your Connections container -->
+                <div class="connections-container">
+                    <!-- banner -->
+                    <div class="your-connections">
+                        <!-- number of connections -->
+                        <div class="connection-numbers">
+                            <!-- 500+ Button? --> <!-- check again -->
+                            <p>500+</p>
+                        </div>
+                        <p>Your Connections</p>
+                    </div>
+                    <!-- people -->
+                    <div class="connections-people">
+                        <div class="connection-1">
+                            <!-- Image for user 1 -->
+                            <img src="./images/adrien-s.jpg" alt="Adrien">
+                            <p>Adrien D</p>
+                        </div>
+                        <div class="connection-2">
+                            <!-- Image for user 1 -->
+                            <img src="./images/anne-s.jpg" alt="Anne">
+                            <p>Anne J</p>
+                        </div>
+                        <div class="connection-3">
+                            <!-- Image for user 1 -->
+                            <img src="./images/alayne-s.jpg" alt="Alayne">
+                            <p>Alayne T</p>
+                        </div>
+                        <div class="connection-4">
+                            <!-- Image for user 1 -->
+                            <img src="./images/arry-s.jpg" alt="Arry">
+                            <p>Arry Y</p>
+                        </div>
+                    </div>
+                    <!-- view more -->
+                    <div class="connections-more">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+css
+
+/* bottom section */
+.bottom-container{
+    /* width: 100%; */
+    height: 800px; /* can be removed later? */
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: gray;
+}
+
+/* feed */
+.left-content{
+    width: 50%;
+    height: 700px; /* can be removed later? */
+    background-color: turquoise;
+    padding: 5px;
+}
+
+/* user card */
+.user-card-container {
+    width: 300px;
+    height: 190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* background-color: purple; */
+}
+
+.user-card {
+    width: 100%;
+    height: 210px;
+    background-color: #fff;
+    border: 2px solid #999;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #17a2b8;
+    height: 65px;
+    margin-bottom: -10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 25px 0px;
+}
+
+.avatar-m {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 75px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon-s {
+    height: 10px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+/* Education container */
+.education-container {
+    /* width: 100%; */
+    height: 300px;
+    background-color: brown;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.education-banner {
+    /* width: 100%; */
+    height: 50px;
+    background-color: black;
+}
+.education-banner > p {
+    color: white;
+    padding: 15px;
+}
+.education-details {
+    width: 100%;
+}
+
+/* connections */
+.right-content{
+    width: 25%;
+    height: 700px; /* can be removed later? */
+    margin-left: 20px;
+    background-color:coral;
+}
