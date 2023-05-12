@@ -43,9 +43,7 @@ body {
 
 /* feed */
 .left-content{
-    /* width: 50%; */
     padding: 5px;
-    /* background-color: turquoise; */
 }
 
 /* user card */
@@ -120,7 +118,6 @@ a {
     margin-left: 10px;
 }
 .education-details {
-    /* width: 100%; */
     padding: 10px;
 }
 .education-details stern {
